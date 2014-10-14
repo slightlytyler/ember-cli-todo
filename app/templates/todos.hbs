@@ -7,7 +7,7 @@
                 {{#if isEditing}}
                     {{input type="text" class="edit" value=title focus-out="acceptChanges" insert-newline="acceptChanges"}}
                 {{else}}
-                    {{ input type="checkbox" checked=isCompleted class="toggle" }}
+                    {{input type="checkbox" checked=isCompleted class="toggle"}}
                     <label {{action "editTodo" onon="doubleClick"}}>{{title}}</label><button {{action "removeTodo"}} class="destroy"></button>
                 {{/if}}
             </li>
